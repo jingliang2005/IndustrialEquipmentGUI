@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57926ED9-7B47-4C18-9CC1-2066DCDFE55B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ControlLibraryWinForm</RootNamespace>
+    <AssemblyName>ControlLibraryWinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\WinFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WinFormBase.Designer.cs">
+      <DependentUpon>WinFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageConfiguration.Designer.cs">
+      <DependentUpon>PageConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageDashboard.Designer.cs">
+      <DependentUpon>PageDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageDebugging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageDebugging.Designer.cs">
+      <DependentUpon>PageDebugging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageEquipments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageEquipments.Designer.cs">
+      <DependentUpon>PageEquipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageFaultAlerts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageFaultAlerts.Designer.cs">
+      <DependentUpon>PageFaultAlerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageHome.Designer.cs">
+      <DependentUpon>PageHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageMain.Designer.cs">
+      <DependentUpon>PageMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageSubBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageSubBase.Designer.cs">
+      <DependentUpon>PageSubBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreNetFramework\CoreNetFramework.csproj">
+      <Project>{e7f0bb13-267a-4e53-a81c-31cbe6a449b4}</Project>
+      <Name>CoreNetFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\WinFormBase.resx">
+      <DependentUpon>WinFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\PageMain.resx">
+      <DependentUpon>PageMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
