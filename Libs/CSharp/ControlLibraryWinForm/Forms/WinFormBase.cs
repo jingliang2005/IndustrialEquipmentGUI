@@ -16,12 +16,11 @@ namespace ControlLibraryWinForm.Forms
     {
         public UserControl MainControl { get; set; }
 
-        public WinFormBase()
+        public WinFormBase(UserControl mainControl)
         {
             InitializeComponent();
             SetDefaultAppearance();
-            MainControl = null;
-            AddMainControl();
+            AddMainControl(mainControl);
         }
 
         /// <summary>
@@ -34,14 +33,16 @@ namespace ControlLibraryWinForm.Forms
             this.WindowState = FormWindowState.Maximized;
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoScaleMode = AutoScaleMode.Inherit;
-            this.Font = new Font("宋体", 16F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134)));   
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ShowInTaskbar = false;
+            this.Font = new Font("宋体", 16F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134)));
         }
 
-        public virtual void AddMainControl()
+        public virtual void AddMainControl(UserControl mainControl)
         {
-            MainControl = new PageMain();
+            MainControl = mainControl;
             this.Controls.Add(MainControl);
-            MainControl.Dock = DockStyle.Fill;      
+            MainControl.Dock = DockStyle.Fill;
         }
 
 

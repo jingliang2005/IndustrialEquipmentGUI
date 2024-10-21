@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ControlLibraryWinForm.Forms;
+using ControlLibraryWinForm.Pages;
 
 namespace AppWinForm
 {
@@ -18,7 +19,8 @@ namespace AppWinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WinFormBase());
+            PageMain pageMain = new PageMain();
+            Application.Run(new WinFormBase(pageMain));
         }
     }
 }

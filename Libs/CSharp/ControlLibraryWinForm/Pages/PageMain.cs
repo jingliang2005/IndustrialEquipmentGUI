@@ -74,6 +74,9 @@ namespace ControlLibraryWinForm.Pages
             PageDashboard   pageDashboard = new PageDashboard("Dashboard");
             this.InsertPageAndButton(pageDashboard);
 
+            PageEquipments pageEquipments = new PageEquipments("Equipments");
+            this.InsertPageAndButton(pageEquipments);
+
             this.HideAllPage();
             PageHome pageHome = new PageHome("Home");
             this.InsertPageAndButton(pageHome);
