@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Libs\CSharp\CoreBase\CoreBase.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\WpfControlLibrary\WpfControlLibrary.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\WpfCustomControlLibrary\WpfCustomControlLibrary.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\WpfLibraryModel\WpfLibraryModel.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\WpfLibraryViewModel\WpfLibraryViewModel.csproj" />
+  </ItemGroup>
+
 </Project>
