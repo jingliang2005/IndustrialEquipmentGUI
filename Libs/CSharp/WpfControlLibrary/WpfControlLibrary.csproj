@@ -7,4 +7,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CoreBase\CoreBase.csproj" />
+    <ProjectReference Include="..\CoreModbus\CoreModbus.csproj" />
+    <ProjectReference Include="..\CoreOpcUA\CoreOpcUA.csproj" />
+    <ProjectReference Include="..\CoreSCADA\CoreSCADA.csproj" />
+  </ItemGroup>
+
 </Project>

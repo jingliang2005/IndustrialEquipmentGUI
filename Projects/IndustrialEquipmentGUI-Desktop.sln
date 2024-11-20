@@ -19,13 +19,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreBase", "..\Libs\CSharp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppWpf", "..\Apps\CSharp\AppWpf\AppWpf.csproj", "{115C9F09-9EEC-44C3-AF03-1C7AC0C3674C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlLibrary", "..\Libs\CSharp\WpfControlLibrary\WpfControlLibrary.csproj", "{66980C7B-7676-472A-ABC9-C688CADE6D8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControlLibrary", "..\Libs\CSharp\WpfControlLibrary\WpfControlLibrary.csproj", "{66980C7B-7676-472A-ABC9-C688CADE6D8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLibraryViewModel", "..\Libs\CSharp\WpfLibraryViewModel\WpfLibraryViewModel.csproj", "{40DF7014-3ED6-43FB-88F2-9776EA1CD8F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLibraryViewModel", "..\Libs\CSharp\WpfLibraryViewModel\WpfLibraryViewModel.csproj", "{40DF7014-3ED6-43FB-88F2-9776EA1CD8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomControlLibrary", "..\Libs\CSharp\WpfCustomControlLibrary\WpfCustomControlLibrary.csproj", "{952AEC40-3025-4EE1-94CA-041FDE4AF625}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCustomControlLibrary", "..\Libs\CSharp\WpfCustomControlLibrary\WpfCustomControlLibrary.csproj", "{952AEC40-3025-4EE1-94CA-041FDE4AF625}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLibraryModel", "..\Libs\CSharp\WpfLibraryModel\WpfLibraryModel.csproj", "{73E4EE7C-6968-4271-8A25-ED213D48C85B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLibraryModel", "..\Libs\CSharp\WpfLibraryModel\WpfLibraryModel.csproj", "{73E4EE7C-6968-4271-8A25-ED213D48C85B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreModbus", "..\Libs\CSharp\CoreModbus\CoreModbus.csproj", "{788F2B5E-C889-45E8-9651-576C38BC9E6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreOpcUA", "..\Libs\CSharp\CoreOpcUA\CoreOpcUA.csproj", "{207C4768-C2BA-4579-BD0F-334FD52557EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreSCADA", "..\Libs\CSharp\CoreSCADA\CoreSCADA.csproj", "{5FC38EC3-814C-406A-92F9-ECA8A8931B5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,18 @@ Global
 		{73E4EE7C-6968-4271-8A25-ED213D48C85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73E4EE7C-6968-4271-8A25-ED213D48C85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73E4EE7C-6968-4271-8A25-ED213D48C85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788F2B5E-C889-45E8-9651-576C38BC9E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788F2B5E-C889-45E8-9651-576C38BC9E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788F2B5E-C889-45E8-9651-576C38BC9E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788F2B5E-C889-45E8-9651-576C38BC9E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207C4768-C2BA-4579-BD0F-334FD52557EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207C4768-C2BA-4579-BD0F-334FD52557EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207C4768-C2BA-4579-BD0F-334FD52557EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207C4768-C2BA-4579-BD0F-334FD52557EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC38EC3-814C-406A-92F9-ECA8A8931B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC38EC3-814C-406A-92F9-ECA8A8931B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC38EC3-814C-406A-92F9-ECA8A8931B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC38EC3-814C-406A-92F9-ECA8A8931B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +101,9 @@ Global
 		{40DF7014-3ED6-43FB-88F2-9776EA1CD8F4} = {AD9A6C83-82A5-42E6-B66B-8FB283D01C92}
 		{952AEC40-3025-4EE1-94CA-041FDE4AF625} = {AD9A6C83-82A5-42E6-B66B-8FB283D01C92}
 		{73E4EE7C-6968-4271-8A25-ED213D48C85B} = {AD9A6C83-82A5-42E6-B66B-8FB283D01C92}
+		{788F2B5E-C889-45E8-9651-576C38BC9E6E} = {AD9A6C83-82A5-42E6-B66B-8FB283D01C92}
+		{207C4768-C2BA-4579-BD0F-334FD52557EC} = {AD9A6C83-82A5-42E6-B66B-8FB283D01C92}
+		{5FC38EC3-814C-406A-92F9-ECA8A8931B5B} = {AD9A6C83-82A5-42E6-B66B-8FB283D01C92}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C8A93FC-F5CD-446D-8828-F15940FE0BBF}

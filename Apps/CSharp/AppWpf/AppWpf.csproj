@@ -6,10 +6,24 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <BaseOutputPath>../../../bin</BaseOutputPath>
+    <Company>$(Authors)anzhenghe</Company>
+    <Authors>$(AssemblyName)</Authors>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Libs\CSharp\CoreBase\CoreBase.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\CoreModbus\CoreModbus.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\CoreOpcUA\CoreOpcUA.csproj" />
+    <ProjectReference Include="..\..\..\Libs\CSharp\CoreSCADA\CoreSCADA.csproj" />
     <ProjectReference Include="..\..\..\Libs\CSharp\WpfControlLibrary\WpfControlLibrary.csproj" />
     <ProjectReference Include="..\..\..\Libs\CSharp\WpfCustomControlLibrary\WpfCustomControlLibrary.csproj" />
     <ProjectReference Include="..\..\..\Libs\CSharp\WpfLibraryModel\WpfLibraryModel.csproj" />

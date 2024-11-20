@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using CoreSCADA.Core;
+
 namespace WpfControlLibrary.Controls
 {
     /// <summary>
@@ -23,7 +25,14 @@ namespace WpfControlLibrary.Controls
         public ControlMain()
         {
             InitializeComponent();
+            //Task.Run(() =>
+            //{
+                Core = new CoreSCADA.Core.CoreSCADA();
+                Core.Start();
+            //});
         }
+
+        public CoreBase.Core.CoreBase Core { get; set; }
 
         #region Button Click Event
         private void butHome_Click(object sender, RoutedEventArgs e)
@@ -87,5 +96,6 @@ namespace WpfControlLibrary.Controls
             }
         }
         #endregion
+
     }
 }
